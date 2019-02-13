@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Date Formatter</title>
+
+    <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css" media="screen, projection" />
+    <link type="text/css" rel="stylesheet" href="css/dateformatter.css" media="screen, projection" />
+</head>
+
+
+<body>
+    <div class="row">
+        <div class="col s9 input-field">
+            <input type="text" id="currentVal" onkeypress="return (event.charCode == 8 || event.charCode == 13 || event.charCode == 0 || (event.charCode >= 48 && event.charCode <= 57))" value="" />
+        </div>
+        <div class="col s3 right input-field">
+            <button type="reset" class="waves-effect waves-light btn" id="refresh">Refresh</button>
+        </div>
+        <div class="divider col s12"></div>
+        <div class="col s12">
+            <div class="collection">
+                <div class="collection-item row">
+                    <div class="col s3">
+                        <span id="utcLabel">UTC Time</span>
+                    </div>
+                    <div class="col s8 offset-s1 formatdate">
+                        <span id="utcDate" class="utcformat">UTC date</span>
+                    </div>
+                </div>
+                <div class="collection-item row">
+                    <div class="col s3">
+                        <span id="localLabel">Local Time</span>
+                    </div>
+                    <div class="col s8 offset-s1 formatdate">
+                        <span id="localDate" class="localformat">Local date</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="fixed-action-btn">
+                <a class="btn-floating btn-small red">
+                    <i class="large material-icons">M</i>
+                </a>
+                <ul>
+                    <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                </ul>
+            </div> -->
+
+        </div>
+
+        <script type="text/javascript" src="js/app.js"></script>
+        <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+</body>
+
+</html>

@@ -7,8 +7,8 @@
     "start": "electron ."
   },
   "author": "PS",
-  "license": "Mozilla",
-  "dependencies": {
+  "license": "MPL-2.0",
+  "devDependencies": {
     "electron": "^4.0.4",
     "materialize-css": "^1.0.0"
   }
