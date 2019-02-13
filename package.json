@@ -1,0 +1,15 @@
+{
+  "name": "dateformatter",
+  "version": "0.1.1",
+  "description": "Formats the Unix Timestamp",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "PS",
+  "license": "Mozilla",
+  "dependencies": {
+    "electron": "^4.0.4",
+    "materialize-css": "^1.0.0"
+  }
+}
