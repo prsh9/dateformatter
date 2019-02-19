@@ -20,8 +20,6 @@
   "build": {
     "appId": "com.electron.ps.dateformatter",
     "productName": "DateFormatter",
-    "win": {
-      "target": "msi"
-    }
+    "artifactName": "${productName}-setup-${version}-${arch}.${ext}"
   }
 }
