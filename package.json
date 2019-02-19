@@ -4,12 +4,24 @@
   "description": "Formats the Unix Timestamp",
   "main": "index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "author": "PS",
   "license": "MPL-2.0",
+  "dependencies": {
+    "materialize-css": "^1.0.0"
+  },
   "devDependencies": {
     "electron": "^4.0.4",
-    "materialize-css": "^1.0.0"
+    "electron-builder": "^20.38.5"
+  },
+  "build": {
+    "appId": "com.electron.ps.dateformatter",
+    "productName": "DateFormatter",
+    "win": {
+      "target": "msi"
+    }
   }
 }
